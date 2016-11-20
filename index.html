@@ -1,0 +1,34 @@
+<meta charset="utf-8">
+   <link rel="stylesheet" href="main.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js:6:37"></script>
+
+   <script src="homework8.js"></script> 
+   <title>WebSQL Example</title>
+  </head>
+
+  <body>
+
+<h1>Helen's WebSQL Example</h1>
+
+<div id="controls">
+    <p>Add a new location to the database</p>
+    <label>Name of Location: </label><input type="text" id="nameloc" /><br />
+    <label>Latitude: </label><input type="text" id="latitude" /><br />
+    <label>Longitude: </label><input type="text" id="longitude" /><br />
+    <button type="button" id="addlocation" onclick="addLoc();">Add Location</button>
+</div>
+<div id="loclistholder">
+    <h3>Your Locations</h3>
+    <ul id="locationList">
+    </ul>
+</div>
+<p><strong>Note: </strong>You can leave this page and when you return the locations you entered will still be here!</p>
+
+<div>
+   <script src="https://maps.google.com/maps/api/js?key=AIzaSyCapooPJ_53fiV0pdUma4Y12RJ5yT7n6rk"></script>
+  <div id="map" style="width: 600px; height: 600px;"></div>      
+  </div>
+</body>
+
+</body>
